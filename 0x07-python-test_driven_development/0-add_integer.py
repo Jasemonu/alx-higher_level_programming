@@ -6,7 +6,7 @@ def add_integer(a, b=98):
 
     Args:
         a: the first argument, which must be an integer or float.
-        b: the second argument, which must be an integer or float. Defaults to 98.
+        b: the second argument, must be an integer or float. Defaults to 98.
 
     Returns:
         The sum of the two arguments as an integer.
