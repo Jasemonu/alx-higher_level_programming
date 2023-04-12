@@ -8,4 +8,4 @@ def read_file(filename=""):
 
     with open(filename, "r", encoding="utf-8") as fl:
         text = fl.read()
-    print(text)
+    print(text, end="")
