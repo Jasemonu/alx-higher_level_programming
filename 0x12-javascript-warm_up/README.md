@@ -16,8 +16,8 @@
 	* The first line: “C is fun”
 	* The second line: “Python is cool”
 	* The third line: “JavaScript is amazing”
-	* You must use console.log(...) to print all output
-	* You are not allowed to use var
+	* You must use **console.log(...)** to print all output
+	* You are not allowed to use **var**
 
 ## 2. Arguments
 
