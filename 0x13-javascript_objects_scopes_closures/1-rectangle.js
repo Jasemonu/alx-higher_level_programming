@@ -3,7 +3,7 @@
 * A calss of a Rectangle with a constructor
 */
 class Rectangle {
-	constructor(w, h) {
+	constructor (w, h) {
 		this.width = w;
 		this.height = h;
 	}
