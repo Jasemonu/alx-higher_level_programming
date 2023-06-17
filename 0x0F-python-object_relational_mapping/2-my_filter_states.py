@@ -20,7 +20,7 @@ def search_states():
     db_cursor = db_connect.cursor()
     db_cursor.execute(
             "SELECT * FROM states WHERE name LIKE BINARY '{}' \
-                ORDER BY states.id ASC".format(argv[4]))
+                ORDER BY states.id ASC".format(sys.argv[4]))
     states = db_cursor.fetchall()
     for state in states:
         print(state)
