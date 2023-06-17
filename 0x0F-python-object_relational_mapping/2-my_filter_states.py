@@ -15,12 +15,13 @@ def search_states():
         port=3306,
         user=sys.argv[1],
         passwd=sys.argv[2],
-        db=sys.argv[3]
+        db=sys.argv[3],
+        name=sys.argv[4]		
         )
     db_cursor = db_connect.cursor()
     db_cursor.execute(
-            "SELECT * FROM states WHERE name LIKE BINARY '{}' \
-                ORDER BY states.id ASC".format(sys.argv[4]))
+            "SELECT * FROM states WHERE name = %s \
+                ORDER BY states.id ASC")
     states = db_cursor.fetchall()
     for state in states:
         print(state)
