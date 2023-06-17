@@ -18,7 +18,7 @@ def search_state():
         )
     db_cursor = db_connect.cursor()
     db_cursor.execute(
-            "SELECT * FROM states WHERE state name LIKE 'N%' \
+            "SELECT * FROM states WHERE name LIKE BINARY 'N%' \
                 ORDER BY states.id ASC")
     states = db_cursor.fetchall()
     for state in states:
