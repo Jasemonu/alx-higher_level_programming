@@ -15,12 +15,12 @@ def search_state():
         user=sys.argv[1],
         passwd=sys.argv[2],
         db=sys.argv[3]
+		charset="utf-8"
         )
     db_cursor = db_connect.cursor()
     db_cursor.execute(
-			"SELECT * FROM states
-            WHERE state name LIKE 'N%'
-            ORDER BY id ASC")
+			"SELECT * FROM states WHERE state name LIKE 'N%' \
+			ORDER BY id ASC")
     states = db_cursor.fetchall()
     for state in states:
         print(state)
