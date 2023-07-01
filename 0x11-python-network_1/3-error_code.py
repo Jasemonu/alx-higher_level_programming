@@ -10,10 +10,10 @@ from urllib import request, error
 
 if __name__ == "__main__":
 
-	url = argv[1]
-	try:
-		with request.urlopen(url) as response:
-			body = response.read(url).decode('utf-8')
-			print(body)
-	except error.HTTPError as e:
-		print("Error code: {}" .format(e.code))
+    url = argv[1]
+    try:
+        with request.urlopen(url) as response:
+            body = response.read(url).decode("ascii")
+            print(body)
+    except error.HTTPError as e:
+        print("Error code: {}" .format(e.code))
