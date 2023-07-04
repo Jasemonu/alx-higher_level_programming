@@ -1,5 +1,7 @@
 # 0x10. Python - Network #0
 
+![The WEB](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/images/TheWeb.png)
+
 # Resources
 
 ## Read or watch:
